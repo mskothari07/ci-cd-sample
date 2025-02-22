@@ -32,7 +32,7 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh -o StrictHostKeyChecking=no ec2-user@ec2-44-204-183-242.compute-1.amazonaws.com << 'EOF'
-          cd /ci-cd-sample
+          cd /home/ec2-user/ci-cd-sample
           git pull origin main
           npm install
           pm2 restart all
