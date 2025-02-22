@@ -30,7 +30,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-1'
       run: |
-        ssh -o StrictHostKeyChecking=no ec2-user@your-ec2-public-dns << 'EOF'
+        ssh -o StrictHostKeyChecking=no ec2-user@ec2-44-204-183-242.compute-1.amazonaws.com << 'EOF'
           cd /path/to/your/app
           git pull origin main
           npm install
