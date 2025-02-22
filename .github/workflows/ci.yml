@@ -35,6 +35,4 @@ jobs:
           cd /home/ec2-user/ci-cd-sample
           git pull origin main
           npm install
-          sudo npm install -g pm2
-          pm2 restart all
         EOF
