@@ -48,7 +48,7 @@ jobs:
       run: |
         ssh -o StrictHostKeyChecking=no ec2-user@ec2-54-175-80-92.compute-1.amazonaws.com << 'EOF'
           docker pull meetkothari/hello-world-app:latest
-          docker stop mskDocker || true
-          docker rm mskDocker || true
+          docker stop hello-world-app || true
+          docker rm hello-world-app || true
           docker run -d -p 3000:3000 --name hello-world-app meetkothari/hello-world-app:latest
         EOF
