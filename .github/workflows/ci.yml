@@ -50,5 +50,5 @@ jobs:
           docker pull meetkothari/hello-world-app:latest
           docker stop mskDocker || true
           docker rm mskDocker || true
-          docker run -d -p 3000:3000 --name mskDocker meetkothari/hello-world-app:latest
+          docker run -d -p 3000:3000 --name hello-world-app meetkothari/hello-world-app:latest
         EOF
