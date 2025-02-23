@@ -6,7 +6,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World! CHECK THE NODEMON\n');
+  res.end('Hello, World! Auto Start\n');
 });
 
 server.listen(port, hostname, () => {
